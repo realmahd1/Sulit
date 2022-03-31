@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-primary);
+}
+
+body {
+  direction: rtl;
+  -moz-font-feature-settings: "ss02";
+  -webkit-font-feature-settings: "ss02";
+  font-feature-settings: "ss02";
+  font-family: var(--font-primary);
+}
+
+pre {
+  background: #1a1d24 !important;
+  border: 1px solid #1a1d24;
+  border-left: 3px solid #f36d33;
+  color: #ffffff;
+  page-break-inside: avoid;
+  font-family: monospace;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1em 1.5em;
+  display: block;
+  word-wrap: break-word;
+  direction:ltr;
+}
+
+@font-face {
+  font-family: IRANSansX;
+  font-style: normal;
+  font-weight: bold;
+  src: url('/fonts/woff/IRANSansX-Bold.woff') format('woff'),   
+  url('/fonts/woff2/IRANSansX-Bold.woff2') format('woff2')
+}
+
+@font-face {
+  font-family: IRANSansX;
+  font-style: normal;
+  font-weight: normal;
+  src: url('/fonts/woff/IRANSansX-Regular.woff') format('woff'),   
+  url('/fonts/woff2/IRANSansX-Regular.woff2') format('woff2')
+}
