@@ -82,7 +82,7 @@ export default function Footer() {
   return (
     <footer className="py-16 flex flex-col items-center">
       <p className="dark:text-[#e5e5e5] mb-3 font-bold opacity-60 text-sm text-center" style={{fontFamily:'cursive',direction:'ltr'}}>
-        <a target="_blank" href="https://www.linkedin.com/in/mmsaeidi/">M.Mahdi Saeidi</a> • © {date} • All Rights Reserved
+        <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/mmsaeidi/">M.Mahdi Saeidi</a> • © {date} • All Rights Reserved
       </p>
       <ThemeSwitcher />
     </footer>
