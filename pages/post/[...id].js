@@ -23,14 +23,14 @@ export default function PostPage({post}) {
       <Header name={globalData().name} />
       <hr className='w-[75%] border-gray-400 -mt-6 mb-8'/>
       {post === undefined ? <Loading /> :
-      <article className="px-6 md:px-0">
+      <article className="w-full px-6 md:px-0">
         <header>
           <h1 className="text-xl md:text-3xl text-gray-600 dark:text-gray-300 text-center mb-12">
             {post.header}
           </h1>
         </header>
         <main className='shadow-2xl p-4'>
-          <article className="prose dark:prose-dark">
+          <article className="max-w-fit sm:max-w-prose prose dark:prose-dark">
             {parse(post.text)}
           </article>
         </main>
